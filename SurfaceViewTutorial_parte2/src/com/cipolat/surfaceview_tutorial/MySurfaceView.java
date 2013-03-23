@@ -130,8 +130,10 @@ public class MySurfaceView extends SurfaceView implements
 				// ejeX
 				(touched_x > mitadW + (mitadW / 2))
 				&& (touched_x < mitadW + (mitadW / 2) + anchobitmap)) {
+			//dibujamos boton con la imagen del btn presionado
 			canvas.drawBitmap(imgBoton_push, ancho * 2 / 3, alto * 3 / 4, null);
 		} else {
+			//dibujamos boton con la imagen del btn libre
 			canvas.drawBitmap(imgBoton_libre, ancho * 2 / 3, alto * 3 / 4, null);
 		}
 
